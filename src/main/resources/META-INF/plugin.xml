@@ -1,0 +1,21 @@
+<idea-plugin>
+    <id>com.example.fah_sound_on_testcase_fail_serenity</id>
+    <name>FAAHHH on Test Failure</name>
+    <version>1.0.0</version>
+
+    <vendor email="sarveshvasan2003@gmail.com">Sarvesh</vendor>
+
+    <description><![CDATA[
+        Plays a dramatic FAAHHH sound whenever a test run fails.
+    ]]></description>
+
+    <depends>com.intellij.modules.platform</depends>
+    <depends>com.intellij.modules.java</depends>
+    <depends>com.intellij.modules.execution</depends>
+
+    <applicationListeners>
+        <listener
+                class="com.example.fah_sound_on_testcase_fail_serenity.TestRunTracker"
+                topic="com.intellij.openapi.application.ApplicationActivationListener"/>
+    </applicationListeners>
+</idea-plugin>

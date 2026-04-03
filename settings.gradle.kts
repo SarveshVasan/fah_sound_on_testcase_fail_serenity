@@ -1,0 +1,1 @@
+rootProject.name = "fah_sound_on_testcase_fail_serenity"
